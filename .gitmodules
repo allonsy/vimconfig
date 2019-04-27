@@ -4,3 +4,6 @@
 [submodule "pack/allonsy/start/vim-commentary"]
 	path = pack/allonsy/start/vim-commentary
 	url = git@github.com:tpope/vim-commentary.git
+[submodule "pack/allonsy/start/vim-unimpaired"]
+	path = pack/allonsy/start/vim-unimpaired
+	url = git@github.com:tpope/vim-unimpaired.git
