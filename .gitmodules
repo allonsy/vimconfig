@@ -7,6 +7,3 @@
 [submodule "pack/allonsy/start/vim-unimpaired"]
 	path = pack/allonsy/start/vim-unimpaired
 	url = git@github.com:tpope/vim-unimpaired.git
-[submodule "pack/allonsy/start/vim-surround"]
-	path = pack/allonsy/start/vim-surround
-	url = git@github.com:tpope/vim-surround.git

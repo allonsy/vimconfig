@@ -1,6 +1,8 @@
 #!/bin/bash
 
-if [ $# -ne 1]; then
+set -e
+
+if [ $# -ne 1 ]; then
     echo "Please provide a package to remove"
     exit 1
 fi
