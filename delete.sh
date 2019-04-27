@@ -9,5 +9,5 @@ fi
 
 cd ~/.vim/pack/allonsy/start
 git submodule deinit -f -- $1
-rm -rf ~/.vim/.git/modules/pack/allonsy/$1
+rm -rf ~/.vim/.git/modules/pack/allonsy/start/$1
 git rm -f $1
