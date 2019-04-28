@@ -33,3 +33,5 @@ let g:netrw_liststyle = 3
 autocmd FileType sh setlocal commentstring=#\ %s
 autocmd FileType python setlocal commentstring=#\ %s
 autocmd FileType rust setlocal commentstring=//\ %s
+
+filetype plugin on
