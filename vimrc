@@ -28,3 +28,8 @@ set hidden
 
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
+
+" Comments
+autocmd FileType sh setlocal commentstring=#\ %s
+autocmd FileType python setlocal commentstring=#\ %s
+autocmd FileType rust setlocal commentstring=//\ %s
