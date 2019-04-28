@@ -15,6 +15,7 @@ inoremap <right> <nop>
 syntax on
 set number
 set nowrap
+set hlsearch
 
 " Indentation
 set autoindent
