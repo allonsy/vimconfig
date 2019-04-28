@@ -13,3 +13,6 @@
 [submodule "pack/allonsy/start/rust.vim"]
 	path = pack/allonsy/start/rust.vim
 	url = git@github.com:rust-lang/rust.vim.git
+[submodule "pack/allonsy/start/gundo.vim"]
+	path = pack/allonsy/start/gundo.vim
+	url = git@github.com:sjl/gundo.vim.git
