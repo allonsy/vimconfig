@@ -17,6 +17,14 @@ set number
 set nowrap
 set hlsearch
 
+" Mappings
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+nmap <C-n> :bn<CR>
+nmap <C-p> :bp<CR>
+
 " Indentation
 set autoindent
 set smartindent
