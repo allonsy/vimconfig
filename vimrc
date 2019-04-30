@@ -18,10 +18,10 @@ set nowrap
 set hlsearch
 
 " Mappings
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
+nnoremap <silent> <C-h> <C-w>h
+nnoremap <silent> <C-j> <C-w>j
+nnoremap <silent> <C-k> <C-w>k
+nnoremap <silent> <C-l> <C-w>l
 nmap <C-n> :bn<CR>
 nmap <C-p> :bp<CR>
 
