@@ -16,3 +16,6 @@
 [submodule "pack/allonsy/start/gundo.vim"]
 	path = pack/allonsy/start/gundo.vim
 	url = git@github.com:sjl/gundo.vim.git
+[submodule "pack/allonsy/start/nerdtree"]
+	path = pack/allonsy/start/nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
