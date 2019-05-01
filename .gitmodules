@@ -19,3 +19,6 @@
 [submodule "pack/allonsy/start/nerdtree"]
 	path = pack/allonsy/start/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
+[submodule "pack/allonsy/start/vim-eunuch"]
+	path = pack/allonsy/start/vim-eunuch
+	url = git@github.com:tpope/vim-eunuch
