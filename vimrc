@@ -19,14 +19,17 @@ set nowrap
 set hlsearch
 set path+=**
 set wildmenu
+set diffopt=vertical
 
 " Mappings
+let mapleader = " "
 nnoremap <silent> <C-h> <C-w>h
 nnoremap <silent> <C-j> <C-w>j
 nnoremap <silent> <C-k> <C-w>k
 nnoremap <silent> <C-l> <C-w>l
-nmap <C-n> :bn<CR>
-nmap <C-p> :bp<CR>
+nmap <leader>n :bn<CR>
+nmap <leader>p :bp<CR>
+nmap <leader>q :bd<CR>
 
 " Indentation
 set autoindent
