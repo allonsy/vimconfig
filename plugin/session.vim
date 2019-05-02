@@ -13,10 +13,7 @@ endfunction
 function LoadSession(pathname)
     let session_location = a:pathname
     if filereadable(expand(session_location))
-        echom("loading" . session_location)
         execute "source" session_location
-    else
-        echom("Not readable: " . session_location)
     endif
 endfunction
 
