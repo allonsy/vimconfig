@@ -12,10 +12,13 @@ inoremap <right> <nop>
 inoremap <right> <nop>
 
 " Basics
+set nocompatible
 syntax on
 set number
 set nowrap
 set hlsearch
+set path+=**
+set wildmenu
 
 " Mappings
 nnoremap <silent> <C-h> <C-w>h
