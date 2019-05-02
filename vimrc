@@ -27,9 +27,9 @@ nnoremap <silent> <C-h> <C-w>h
 nnoremap <silent> <C-j> <C-w>j
 nnoremap <silent> <C-k> <C-w>k
 nnoremap <silent> <C-l> <C-w>l
-nmap <leader>n :bn<CR>
-nmap <leader>p :bp<CR>
-nmap <leader>q :bd<CR>
+nmap <silent> <leader>n :bn<CR>
+nmap <silent> <leader>p :bp<CR>
+nmap <silent> <leader>q :bd<CR>
 
 " Indentation
 set autoindent
