@@ -20,6 +20,8 @@ set hlsearch
 set path+=**
 set wildmenu
 set diffopt=vertical
+autocmd VimEnter * :call ProcessStartingDirectory()
+command! Detach :call Detach()
 
 " Mappings
 let mapleader = " "
