@@ -14,6 +14,7 @@ inoremap <right> <nop>
 " Basics
 set nocompatible
 syntax on
+hi Error NONE
 set number
 set nowrap
 set hlsearch
@@ -32,6 +33,14 @@ nnoremap <silent> <C-l> <C-w>l
 nmap <silent> <leader>n :bn<CR>
 nmap <silent> <leader>p :bp<CR>
 nmap <silent> <leader>q :bd<CR>
+
+
+" NERDTree
+let g:NERDTreeMapJumpNextSibling="<C-n>"
+let g:NERDTreeMapJumpPrevSibling="<C-p>"
+let g:NERDTreeMapOpenSplit="s"
+let g:NERDTreeMapOpenVSplit="v"
+
 
 " Indentation
 set autoindent
