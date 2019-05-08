@@ -20,6 +20,7 @@ set hlsearch
 set path+=**
 set wildmenu
 set diffopt=vertical
+set backspace=indent,eol,start
 autocmd VimEnter * :call ProcessStartingDirectory()
 command! Detach :call Detach()
 
@@ -29,9 +30,10 @@ nnoremap <silent> <C-h> <C-w>h
 nnoremap <silent> <C-j> <C-w>j
 nnoremap <silent> <C-k> <C-w>k
 nnoremap <silent> <C-l> <C-w>l
-nmap <silent> <leader>n :bn<CR>
-nmap <silent> <leader>p :bp<CR>
-nmap <silent> <leader>q :bd<CR>
+nnoremap <silent> <leader>n :bn<CR>
+nnoremap <silent> <leader>p :bp<CR>
+nnoremap <silent> <leader>q :bd<CR>
+nnoremap <silent> <leader><leader> :noh<CR>
 
 " Indentation
 set autoindent
@@ -52,3 +54,6 @@ autocmd FileType python setlocal commentstring=#\ %s
 autocmd FileType rust setlocal commentstring=//\ %s
 
 filetype plugin on
+
+" Colors
+colorscheme molokai
