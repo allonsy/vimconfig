@@ -21,7 +21,7 @@ set path+=**
 set wildmenu
 set diffopt=vertical
 set backspace=indent,eol,start
-autocmd VimEnter * :call ProcessStartingDirectory()
+" autocmd VimEnter * :call ProcessStartingDirectory()
 command! Detach :call Detach()
 
 " Mappings
