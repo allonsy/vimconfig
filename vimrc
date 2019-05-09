@@ -13,8 +13,8 @@ inoremap <right> <nop>
 
 " Basics
 set nocompatible
+set noesckeys
 syntax on
-hi Error NONE
 set number
 set nowrap
 set hlsearch
@@ -66,3 +66,11 @@ filetype plugin on
 
 " Colors
 colorscheme molokai
+
+command! SyntaxCheck :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+    if !exists("*synstack")
+        return
+    endif
+    echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
