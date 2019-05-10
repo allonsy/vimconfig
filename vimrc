@@ -35,7 +35,8 @@ nnoremap <silent> <leader>n :bn<CR>
 nnoremap <silent> <leader>p :bp<CR>
 nnoremap <silent> <leader>q :bd<CR>
 nnoremap <silent> <leader><leader> :noh<CR>
-
+nnoremap <silent> <leader>c ]c
+nnoremap <silent> <leader>C [c
 
 " NERDTree
 let g:NERDTreeMapJumpNextSibling="<C-n>"
