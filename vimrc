@@ -22,6 +22,8 @@ set path+=**
 set wildmenu
 set diffopt=vertical
 set backspace=indent,eol,start
+set autoread
+set shell=/usr/bin/zsh
 " autocmd VimEnter * :call ProcessStartingDirectory()
 command! Detach :call Detach()
 
