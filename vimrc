@@ -19,6 +19,7 @@ set number
 set nowrap
 set hlsearch
 set path+=**
+set complete-=t
 set wildmenu
 set diffopt=vertical
 set backspace=indent,eol,start
