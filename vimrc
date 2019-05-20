@@ -19,12 +19,15 @@ set number
 set nowrap
 set hlsearch
 set path+=**
+set complete-=i
 set complete-=t
 set wildmenu
 set diffopt=vertical
 set backspace=indent,eol,start
 set autoread
 set shell=/usr/bin/zsh
+set statusline=%<%f\ %m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+set laststatus=2
 " autocmd VimEnter * :call ProcessStartingDirectory()
 command! Detach :call Detach()
 
