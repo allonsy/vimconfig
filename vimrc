@@ -49,7 +49,7 @@ let g:NERDTreeMapJumpNextSibling="<C-n>"
 let g:NERDTreeMapJumpPrevSibling="<C-p>"
 let g:NERDTreeMapOpenSplit="s"
 let g:NERDTreeMapOpenVSplit="v"
-
+let g:NERDTreeShowHidden=1
 
 " Indentation
 set autoindent
@@ -81,3 +81,12 @@ function! <SID>SynStack()
     endif
     echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
+
+" Vim diff
+fun! DiffUpdate()
+ if &diff
+   diffupdate
+ endif
+endfun
+autocmd InsertLeave * call DiffUpdate()
+nmap gmc /\v^[<=>\|]{7}.*$<CR>
