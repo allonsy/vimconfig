@@ -19,3 +19,12 @@
 [submodule "pack/allonsy/start/vim-eunuch"]
 	path = pack/allonsy/start/vim-eunuch
 	url = git@github.com:tpope/vim-eunuch
+[submodule "pack/allonsy/start/async.vim"]
+	path = pack/allonsy/start/async.vim
+	url = https://github.com/prabirshrestha/async.vim.git
+[submodule "pack/allonsy/start/vim-lsp"]
+	path = pack/allonsy/start/vim-lsp
+	url = https://github.com/prabirshrestha/vim-lsp.git
+[submodule "pack/allonsy/start/asyncomplete.vim"]
+	path = pack/allonsy/start/asyncomplete.vim
+	url = https://github.com/prabirshrestha/asyncomplete.vim.git
