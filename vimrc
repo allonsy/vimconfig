@@ -37,12 +37,7 @@ nnoremap <silent> <C-h> <C-w>h
 nnoremap <silent> <C-j> <C-w>j
 nnoremap <silent> <C-k> <C-w>k
 nnoremap <silent> <C-l> <C-w>l
-nnoremap <silent> <leader>n :bn<CR>
-nnoremap <silent> <leader>p :bp<CR>
-nnoremap <silent> <leader>q :bd<CR>
 nnoremap <silent> <leader><leader> :noh<CR>
-nnoremap <silent> <leader>c ]c
-nnoremap <silent> <leader>C [c
 
 " NERDTree
 let g:NERDTreeMapJumpNextSibling="<C-n>"
@@ -91,35 +86,5 @@ endfun
 autocmd InsertLeave * call DiffUpdate()
 nmap gmc /\v^[<=>\|]{7}.*$<CR>
 
-" LSP
-if executable('gopls')
-    au User lsp_setup call lsp#register_server({
-        \ 'name': 'golang-lsp',
-        \ 'cmd': {server_info->['gopls']},
-		\ 'workspace_config': { 'gopls': {
-		\   'completeUnimported': v:true
-		\ }},
-        \ 'whitelist': ['go'],
-        \ })
-endif
-
-if executable('rls')
-    au User lsp_setup call lsp#register_server({
-        \ 'name': 'rls',
-        \ 'cmd': {server_info->['rls']},
-        \ 'whitelist': ['rust'],
-        \ })
-endif
-
-function! s:on_lsp_buffer_enabled() abort
-	nnoremap <silent> K :LspHover<CR>
-	nnoremap <silent> * :LspDefinition<CR>
-	" au BufWritePre <buffer> :LspCodeActionSync source.organizeImports
-	au BufWritePre <buffer> :LspDocumentFormatSync
-endfunction
-
-augroup lsp_install
-    au!
-    " call s:on_lsp_buffer_enabled only for languages that has the server registered.
-    autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
-augroup END
+" LSP config
+runtime lsp.vim

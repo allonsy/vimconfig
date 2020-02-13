@@ -7,6 +7,7 @@ fi
 
 function update_package() {
     echo "Updating: $1"
+    git submodule update --init $1
     cd $1
     git pull origin master
     vim -u NONE -c "helptags doc" -c q

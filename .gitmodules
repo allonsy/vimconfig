@@ -25,6 +25,3 @@
 [submodule "pack/allonsy/start/vim-lsp"]
 	path = pack/allonsy/start/vim-lsp
 	url = https://github.com/prabirshrestha/vim-lsp.git
-[submodule "pack/allonsy/start/asyncomplete.vim"]
-	path = pack/allonsy/start/asyncomplete.vim
-	url = https://github.com/prabirshrestha/asyncomplete.vim.git
