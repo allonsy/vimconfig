@@ -31,6 +31,8 @@ set laststatus=2
 " autocmd VimEnter * :call ProcessStartingDirectory()
 command! Detach :call Detach()
 
+" let g:termdebugger='rust-gdb'
+
 " Mappings
 let mapleader = " "
 nnoremap <silent> <C-h> <C-w>h

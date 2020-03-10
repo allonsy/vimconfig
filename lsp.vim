@@ -6,9 +6,6 @@ if executable('gopls')
     au User lsp_setup call lsp#register_server({
         \ 'name': 'golang-lsp',
         \ 'cmd': {server_info->['gopls']},
-		\ 'workspace_config': { 'gopls': {
-		\   'completeUnimported': v:true
-		\ }},
         \ 'whitelist': ['go'],
         \ })
 endif
@@ -18,6 +15,14 @@ if executable('rls')
         \ 'name': 'rls',
         \ 'cmd': {server_info->['rls']},
         \ 'whitelist': ['rust'],
+        \ })
+endif
+
+if executable('pyls')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'pyls',
+        \ 'cmd': {server_info->['pyls']},
+        \ 'whitelist': ['python'],
         \ })
 endif
 
